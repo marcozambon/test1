@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sviluppo di una pagina Web - Blog Epicode</title>
+    <meta title="Sviluppo di una pagina Web - Blog Epicode">
+    <meta name="description"
+        content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile.">
+</head>
+
+<body>
+    <div>
+        <!--intestazione-->
+        <header>
+            <img src="assets/img/logo.svg" alt="logo" width="300" height="100">
+            <nav>
+                <a href="#">home</a>
+                <a href="#">Articoli</a>
+                <a href="#">Job</a>
+            </nav>
+        </header>
+    </div>
+    <hr>
+    <div>
+        <!--contenuto principale-->
+        <main>
+            <h1>come creare un template per i post </h1>
+            <h5>di Mario Rossi - pubblicato il 25-10-2020</h5>
+            <section>
+                <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da
+                    applicare a tutte le pagine</p>
+                <p>le varie aree saranno quindi suddivise in:</p>
+                <ul>
+                    <li>Contenuti di intestazione del tag &lt;header&gt;</li>
+                    <li>Contenuti centrali variabili del tag &lt;main&gt;(corpo principale)</li>
+                    <li>Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;</li>
+                    <li> Formattazione del codice</li>
+                </ul>
+            </section>
+            <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i <abbr
+                    title="Cascade Sheet Style">CSS</abbr>. Perciò i passi saranno:</p>
+            <ul>
+                <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato.</li>
+                <li>Scrivere l'<abbr title="Hyper Text Markup Language">HTML</abbr> dai tag esterni a quelli interni e
+                    dall'alto verso il basso</li>
+                <li>Applicare gli stili <abbr title="Cascade Sheet Style">CSS</abbr></li>
+                <li>L'applicazione di stili <abbr title="Cascade Sheet Style">CSS</abbr> è cresciuta negli anni fino a
+                    raggiungere la diffusione pressoché totale.</li>
+            </ul>
+        </main>
+    </div>
+    <div>
+        <!--contenuto secondario-->
+        <div>
+            <aside>
+                <table>
+                    <caption><b>Diffusione del <abbr title="Cascade Sheet Style">CSS</abbr></b></caption>
+                    <thead>
+                        <tr>
+                            <th>Anno</th>
+                            <th>% di utilizzo</th>
+                            <th>Supporto browsers</th>
+                        </tr>
+                    <tbody>
+                        <tr>
+                            <td>2000</td>
+                            <td>20%</td>
+                            <td>17%</td>
+                        </tr>
+                        <tr>
+                            <td>2002</td>
+                            <td>35%</td>
+                            <td>22%</td>
+                        </tr>
+                        <tr>
+                            <td>2004</td>
+                            <td>45%</td>
+                            <td>42%</td>
+                        </tr>
+                        <tr>
+                            <td>2008</td>
+                            <td>80%</td>
+                            <td>51%</td>
+                        </tr>
+                        <tr>
+                            <td>2012</td>
+                            <td>100%</td>
+                            <td>76%</td>
+                        </tr>
+                    </tbody>
+
+                    </thead>
+
+                </table>
+            </aside>
+        </div>
+        <div>
+            <aside>Un test di validazione potrà essere fatto tramite <a href="https://validator.w3.org/"
+                    target="_blank">il tool online</a> dedicato allo scopo.
+                <p>Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri
+                    developers come loro:<br>
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/kjFC2GAw4Lo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </p>
+            </aside>
+        </div>
+    </div>
+    <div>
+        <!--form-->
+        <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+        <form method="POST" action="#" autocomplete="on">
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Inserire l'email...">
+            </fieldset>
+        </form>
+        <button type="submit" id="invia">Iscriviti!</button>
+
+
+    </div>
+    <hr>
+    <div>
+        <!--area correlati-->
+        <aside>
+            <h2>Area correlati</h2>
+            <nav>
+                <p><a href="#"><b>Validare il codice HTML</b></a><br>
+                    Categoria: Develop <br>
+                    Data: 18-9-2020</p>
+                <p><a href="#"><b>Correggere la sintassi</b></a><br>
+                    Categoria: Develop <br>
+                    Data: 16-9-2020</p>
+                <p><a href="#">Meno Kb nella pagina</a><br>
+                    Categoria: Ottimizzazione<br>
+                    Data: 30-9-2020</p>
+            </nav>
+        </aside>
+    </div>
+    <hr>
+    <div>
+        <!--piè di pagina-->
+        <footer>
+            <p>Blog Epicode ©2021</p>
+            <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA
+                00112233. <a href="#/info@epicode.school " target="_blank">info@epicode.school </a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
